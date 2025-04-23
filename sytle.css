@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f3e6ff;
+    color: #4b0082;
+    overflow-x: hidden;
+  }
+  
+  .marquee-container {
+    width: 100%;
+    background-color: #d8b4f8;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1rem;
+  }
+  
+  .marquee {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scrollText 15s linear infinite;
+  }
+  
+  @keyframes scrollText {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .counter {
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    font-weight: bold;
+    background: #e0c4ff;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  
+  main {
+    text-align: center;
+    padding-top: 80px;
+  }
+  
+  h1 .name {
+    color: #7e3ff2;
+  }
+  
+  .buttons {
+    margin: 20px 0;
+  }
+  
+  button {
+    background-color: #7e3ff2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 0 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #a280f2;
+  }
+  
+  .notes-container {
+    position: relative;
+    height: 150px;
+    margin-top: 40px;
+    overflow: hidden;
+  }
+  
+  .note {
+    position: absolute;
+    min-width: 100px;
+    padding: 10px;
+    background: #e9d5ff;
+    border-radius: 8px;
+    color: #4b0082;
+    animation: floatLeft 20s linear infinite;
+    white-space: nowrap;
+  }
+  
+  @keyframes floatLeft {
+    0% { left: 100vw; }
+    100% { left: -300px; }
+  }
+  
+  @keyframes fall {
+    0% { top: -20px; opacity: 1; }
+    100% { top: 100vh; opacity: 0; }
+  }
+  
+  .note img {
+    border-radius: 4px;
+    margin-top: 5px;
+    max-height: 80px;
+    object-fit: cover;
+  }
+  
+  
+  

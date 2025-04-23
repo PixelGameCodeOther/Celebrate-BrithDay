@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Birthday Celebration</title>
+  <link rel="stylesheet" href="sytle.css" />
+</head>
+<body>
+
+  <!-- Top scrolling text -->
+  <div class="marquee-container">
+    <div class="marquee" id="marqueeText">
+      This Web Page Has [Time Left for the Day] To Lived — Happy Birthday Abby!
+    </div>
+  </div>
+
+  <!-- Celebration counter -->
+  <div class="counter" id="celebrateCounter">Celebrations: 0</div>
+
+  <!-- Main content -->
+  <main>
+    <h1>Today we are celebrating: <span class="name">Abby</span></h1>
+
+    <div class="buttons">
+      <button id="playSong">Play Song</button>
+      <button id="celebrateBtn">Celebrate</button>
+      <button id="leaveNoteBtn">Leave a Note</button>
+    </div>
+
+    <input type="file" id="noteImageInput" accept="image/*" style="display: none;" />
+
+    <div class="notes-container" id="notesContainer"></div>
+  </main>
+
+  <!-- Audio file -->
+  <audio id="happyAudio" src="happy_birthday.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
